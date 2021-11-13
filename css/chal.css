@@ -1,0 +1,112 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --blackcolor: black;
+  --whitecolor: white;
+  --yellowcolor: #ffeb3b;
+}
+
+.container img {
+  margin: 40px auto;
+  width: 1150px;
+  height: 550px;
+  position: absolute;
+}
+.container .left {
+  width: 549px;
+  height: 603px;
+  z-index: 4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .left i {
+  font-size: 90px;
+  z-index: 3;
+  background-color: var(--blackcolor);
+  color: var(--whitecolor);
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  position: relative;
+}
+.container .left i:nth-of-type(2) {
+  font-size: 130px;
+  width: 350px;
+  height: 350px;
+  background-color: var(--yellowcolor);
+  color: black;
+  position: absolute;
+  left: 313px;
+  z-index: 2;
+}
+.container .right {
+  position: relative;
+  width: 500px;
+  transform: rotate(326deg);
+  left: 453px;
+  top: -463px;
+}
+.container .left::after,
+.container .left::before {
+  content: "RETINA READY";
+  position: absolute;
+  z-index: 8;
+  color: var(--whitecolor);
+  background-color: var(--blackcolor);
+  padding: 20px;
+  left: 37px;
+  top: 95px;
+}
+.container .left::after {
+  content: "RESPONSIVE TEMPLATE";
+  color: black;
+  background-color: var(--whitecolor);
+  top: 154px;
+}
+.container .right::after,
+.container .right::before {
+  content: "EASY TO CUSTOMIZE";
+  position: absolute;
+  z-index: 8;
+  color: var(--blackcolor);
+  background-color: var(--whitecolor);
+  padding: 20px;
+  left: 220px;
+  top: 272px;
+  transform: rotate(34deg);
+}
+.container .right::after {
+  content: "UNIQUE DESIGN";
+  background-color: var(--yellowcolor);
+  padding: 20px;
+  left: 150px;
+  top: 295px;
+  padding-right: 37px;
+  padding-left: 37px;
+}
+.container .right img {
+  width: 260px;
+  height: 260px;
+  background-color: var(--blackcolor);
+  padding: 80px;
+  color: var(--whitecolor);
+  border-radius: 50%;
+}
+.container .right img:nth-of-type(2) {
+  background-color: var(--yellowcolor);
+  color: var(--whitecolor);
+  position: absolute;
+  left: 220px;
+  transform: rotate(32deg);
+}
